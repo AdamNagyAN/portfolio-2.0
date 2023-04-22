@@ -63,7 +63,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={cn('font-sans', fontMukta.variable)}>
+    <html
+      lang="en"
+      className={cn('font-sans scroll-smooth', fontMukta.variable)}
+    >
       <head />
       <body className="min-h-screen bg-dark text-white">
         <Navbar />

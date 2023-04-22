@@ -1,26 +1,29 @@
 import * as React from 'react';
-import Image from 'next/image';
+import Hero from '@/components/molecules/pages/marketing/Hero';
+import Services from '@/components/molecules/pages/Services';
+import PortfolioItem from '@/components/molecules/pages/marketing/PortfolioItem';
+import { porfolioItemsConfig } from '@/config/marketing';
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <Image
-          alt="blop"
-          src="/images/Blop.svg"
-          className="absolute w-1/2 hidden lg:block right-0 top-0 min-w-[600px]"
-        />
-        <div>
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
+    <>
+      <Hero />
+      <Services />
+      <section id="portfolio">
+        <div className="container mx-auto mt-16">
+          <h1 className="text-2xl font-bold text-center">PORTFOLIO</h1>
+          <div className="mt-8 flex flex-col gap-8">
+            {porfolioItemsConfig.map((item, index) => (
+              <PortfolioItem
+                key={JSON.stringify(item)}
+                even={index % 2 === 0}
+                {...item}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

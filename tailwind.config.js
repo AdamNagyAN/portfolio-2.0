@@ -19,12 +19,29 @@ module.exports = {
         dark: '#191E24',
         white: '#FFFFFF',
         'light-gray': '#bbbbbb',
-        black: '#000000',
+        black: '#191E24',
       },
     },
   },
   variants: {
     extend: {},
+  },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#111827',
+          secondary: '#FFFFFF',
+          accent: '#1FB2A5',
+          neutral: '#191D24',
+          'base-100': '#2A303C',
+          info: '#3ABFF8',
+          success: '#36D399',
+          warning: '#FBBD23',
+          error: '#F87272',
+        },
+      },
+    ],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };

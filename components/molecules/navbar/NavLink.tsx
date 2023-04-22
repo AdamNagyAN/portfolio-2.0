@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export const NavLink: React.FC<{
@@ -17,8 +16,8 @@ export const NavLink: React.FC<{
     className
   );
   return (
-    <Link href={href} className={classes}>
+    <a href={href} className={classes}>
       {children}
-    </Link>
+    </a>
   );
 };
