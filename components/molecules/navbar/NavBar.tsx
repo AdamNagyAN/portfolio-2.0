@@ -7,8 +7,8 @@ import { NavLink } from '@/components/molecules/navbar/NavLink';
 
 const Navbar = () => {
   return (
-    <nav className="absolute z-20">
-      <div className="container mx-auto px-4 ">
+    <nav className="absolute w-full z-20">
+      <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/">
             <span className="text-lg font-medium uppercase">

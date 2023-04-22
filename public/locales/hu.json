@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Hi, I'm Adam Nagy",
+    "subtitle": "Frontend Web Developer",
+    "text": "Welcome to my portfolio! I specialize in creating beautiful and responsive websites that provide an excellent user experience. From concept to launch, I work closely with you to ensure your website reflects your brand and meets your goals. Check out my portfolio and let's work together to bring your vision to life!",
+    "button": "JUMP TO PORTFOLIO"
+  },
+  "services": {
+    "title": "SERVICES"
+  }
+}
