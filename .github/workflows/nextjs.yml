@@ -5,7 +5,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch:wq
+
   push:
     branches: ["master"]
 
