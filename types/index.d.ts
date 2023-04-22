@@ -44,3 +44,11 @@ export type DocsConfig = {
 export type LandingPageConfig = {
   mainNav: MainNavItem[];
 };
+
+export type PortfolioItemConfig = {
+  image: string;
+  title: string;
+  badges: string[];
+  text: string;
+  link?: string;
+};
