@@ -4,6 +4,7 @@ import { landingPageConfig } from '@/config/marketing';
 import MobileNavMenu from '@/components/molecules/navbar/MobileNavMenu';
 import { siteConfig } from '@/config/site';
 import { NavLink } from '@/components/molecules/navbar/NavLink';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -11,9 +12,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link href="/">
-            <span className="text-lg font-medium uppercase">
-              {siteConfig.name}
-            </span>
+            <Image
+              src={siteConfig.logo}
+              alt="Adam Nagy"
+              width={64}
+              height={64}
+              className="h-full"
+            />
           </Link>
           <div className="flex lg:hidden">
             <MobileNavMenu />
@@ -24,7 +29,7 @@ const Navbar = () => {
                 key={navLink.href}
                 href={navLink.href}
                 type={navLink.type}
-                className={`ml-8 font-medium uppercase`}
+                className={`ml-8 font-bold uppercase`}
               >
                 {navLink.title}
               </NavLink>

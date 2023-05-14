@@ -46,7 +46,7 @@ export const metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: absoluteUrl('/og.jpg'),
+        url: absoluteUrl('/images/Logo.svg'),
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -68,7 +68,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       className={cn('font-sans scroll-smooth', fontMukta.variable)}
     >
       <head />
-      <body className="min-h-screen bg-dark text-white">
+      <body className="min-h-screen bg-base-100 text-white overflow-x-hidden">
         <Navbar />
         {children}
       </body>

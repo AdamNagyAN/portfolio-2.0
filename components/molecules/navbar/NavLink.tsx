@@ -9,9 +9,8 @@ export const NavLink: React.FC<{
 }> = ({ href, children, className, type = 'text' }) => {
   const classes = cn(
     {
-      ['text-base text-dark']: type === 'text',
-      ['text-base text-white bg-black py-2 px-8 rounded-full hover:bg-white hover:text-black transition-all']:
-        type === 'button',
+      ['text-base text-dark hover:text-black']: type === 'text',
+      ['btn btn-primary btn-sm']: type === 'button',
     },
     className
   );

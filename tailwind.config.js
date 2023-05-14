@@ -19,7 +19,7 @@ module.exports = {
         dark: '#191E24',
         white: '#FFFFFF',
         'light-gray': '#bbbbbb',
-        black: '#191E24',
+        black: '#070707',
       },
     },
   },
@@ -30,11 +30,11 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: '#111827',
+          primary: '#3054BA',
           secondary: '#FFFFFF',
           accent: '#1FB2A5',
           neutral: '#191D24',
-          'base-100': '#2A303C',
+          'base-100': '#11151A',
           info: '#3ABFF8',
           success: '#36D399',
           warning: '#FBBD23',

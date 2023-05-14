@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { PortfolioItemConfig } from '@/types';
-import { FiArrowUpRight } from 'react-icons/all';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 const portfolioVariant = (even: boolean) => ({
   show: {
@@ -29,17 +29,21 @@ const PortfolioItem = ({
   image,
   even,
 }: PortfolioItemConfig & { even: boolean }) => {
+  const itemClasses = cn({
+    'card md:card-side bg-base-100 shadow-xl min-h-[300px] flex-col': true,
+    'md:flex-col-reverse md:flex-row-reverse': !even,
+  });
   return (
     <motion.div
       variants={portfolioVariant(even)}
       initial="hidden"
       whileInView="show"
-      className="card md:card-side bg-base-100 shadow-xl min-h-[300px] flex-col"
+      className={itemClasses}
     >
       <figure className="min-w-[300px]">
         <Image
           src={image}
-          className="w-full h-full"
+          className="w-full h-full rounded-3xl"
           alt="Movie"
           width={600}
           height={600}
@@ -56,7 +60,11 @@ const PortfolioItem = ({
         </div>
         <p>{text}</p>
         {link && (
-          <div className="card-actions justify-end">
+          <div
+            className={cn('card-actions justify-start md:justify-end', {
+              'md:justify-start': !even,
+            })}
+          >
             <Link
               href={link}
               className="btn btn-secondary rounded-full"

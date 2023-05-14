@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from '@/components/atoms/Button';
 
 const Hero = () => {
   return (
@@ -25,14 +24,22 @@ const Hero = () => {
             />
           </div>
           <div>
-            <h1 className="text-3xl font-bold">{"Hi, I'm Adam Nagy"}</h1>
+            <h1 className="text-3xl font-medium mb-4">
+              Hi, I&apos;m <span className="font-bold text-primary">Adam</span>{' '}
+              Nagy
+            </h1>
             <h1 className="text-xl font-medium">Frontend Web Developer</h1>
             <p className="py-6">
               {
                 "Welcome to my portfolio! I specialize in creating beautiful and responsive websites that provide an excellent user experience. From concept to launch, I work closely with you to ensure your website reflects your brand and meets your goals. Check out my portfolio and let's work together to bring your vision to life!"
               }
             </p>
-            <Button size="md">JUMP TO PORTFOLIO</Button>
+            <a href="#portfolio" className="btn btn-secondary">
+              Contact
+            </a>
+            <a href="#portfolio" className="btn btn-outline btn-secondary ml-4">
+              View portfolio
+            </a>
           </div>
         </div>
       </div>

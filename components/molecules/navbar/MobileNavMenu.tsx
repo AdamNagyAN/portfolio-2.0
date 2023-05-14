@@ -1,10 +1,10 @@
 'use client';
 import * as React from 'react';
-import { landingPageConfig } from '@/config/marketing';
 import { useState } from 'react';
+import { landingPageConfig } from '@/config/marketing';
 import { NavLink } from '@/components/molecules/navbar/NavLink';
 import Modal from '@/components/molecules/modal/Modal';
-import { AiOutlineClose } from 'react-icons/all';
+import { AiOutlineClose } from 'react-icons/ai';
 import Button from '@/components/atoms/Button';
 
 const MobileNavMenu: React.FC = () => {

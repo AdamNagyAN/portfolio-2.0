@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply rounded-full hover:scale-[1.05] font-bold uppercase py-3 px-8
+}
+
+.btn-sm {
+    @apply px-8 font-medium py-0
+}
+
+.btn-primary {
+    @apply bg-black text-white border-0
+}
+
+.btn-secondary, .btn-secondary.btn-outline {
+    @apply hover:bg-secondary
+}

@@ -15,13 +15,13 @@ const container = {
 const Services = () => {
   return (
     <section id="services">
-      <div className="container mx-auto mt-16">
+      <div className="container mx-auto mt-20">
         <h1 className="text-2xl font-bold text-center">SERVICES</h1>
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
-          className="flex gap-10 mt-16 flex-wrap justify-center"
+          className="flex gap-20 mt-10 flex-wrap justify-center"
         >
           {servicesConfig.map((service) => (
             <ServiceCard
