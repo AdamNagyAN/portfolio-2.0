@@ -15,6 +15,9 @@ module.exports = {
       '3xl': '2.5rem',
     },
     extend: {
+      animation: {
+        'bounce-slow': 'slide-top 5s linear infinite alternate both',
+      },
       colors: {
         dark: '#191E24',
         white: '#FFFFFF',

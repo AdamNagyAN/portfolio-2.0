@@ -61,7 +61,7 @@ export const metadata = {
   manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
@@ -75,3 +75,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+
+export default RootLayout;

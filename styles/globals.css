@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-    @apply rounded-full hover:scale-[1.05] font-bold uppercase py-3 px-8
+    @apply rounded-full font-bold uppercase py-3 px-8
 }
 
 .btn-sm {
@@ -16,4 +16,19 @@
 
 .btn-secondary, .btn-secondary.btn-outline {
     @apply hover:bg-secondary
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
