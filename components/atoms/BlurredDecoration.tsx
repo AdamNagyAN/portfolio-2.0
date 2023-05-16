@@ -14,7 +14,7 @@ const BlurredDecoration = ({
 }: BlurredDecorationProps) => {
   const classes = cn(
     {
-      'absolute rounded-full opacity-30 blur-sm bg-gradient-to-b to-transparent animate-bounce-slow':
+      'absolute rounded-full opacity-30 blur-sm bg-gradient-to-b to-transparent animate-bounce-slow z-0':
         true,
       'from-indigo-500': color === 'indigo',
       'from-green-500': color === 'green',

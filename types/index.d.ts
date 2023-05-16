@@ -47,9 +47,9 @@ export type LandingPageConfig = {
 };
 
 export type PortfolioItemConfig = {
-  image: string;
   title: string;
-  badges: string[];
-  text: string;
-  link?: string;
+  description: string;
+  image: string;
+  github: string;
+  demo: string;
 };

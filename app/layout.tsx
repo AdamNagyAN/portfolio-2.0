@@ -4,6 +4,7 @@ import '@/styles/globals.css';
 import { siteConfig } from '@/config/site';
 import { absoluteUrl, cn } from '@/lib/utils';
 import Navbar from '@/components/molecules/navbar/NavBar';
+import Footer from '@/components/molecules/footer/Footer';
 
 const fontMukta = Mukta({
   weight: ['200', '500', '700'],
@@ -71,6 +72,7 @@ function RootLayout({ children }: RootLayoutProps) {
       <body className="min-h-screen bg-base-100 text-white overflow-x-hidden">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
