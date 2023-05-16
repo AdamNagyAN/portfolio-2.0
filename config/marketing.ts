@@ -48,24 +48,19 @@ export const servicesConfig = [
 
 export const porfolioItemsConfig: PortfolioItemConfig[] = [
   {
+    title: 'Blessed',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
     image: '/images/blessed.jpg',
-    title: 'BLESSED COMMERCE',
-    badges: ['React', 'Typescript'],
-    text: 'Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n',
-    link: 'https://blessed-commerce.netlify.app/',
+    github: 'https://github.com/',
+    demo: 'https://google.com/',
   },
   {
-    image: '/images/blessed.jpg',
-    title: 'BLESSED COMMERCE',
-    badges: ['React', 'Typescript'],
-    text: 'Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n',
-    link: 'https://blessed-commerce.netlify.app/',
-  },
-  {
-    image: '/images/blessed.jpg',
-    title: 'BLESSED COMMERCE',
-    badges: ['React', 'Typescript'],
-    text: 'Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.\n',
-    link: 'https://blessed-commerce.netlify.app/',
+    title: 'Demo2',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    image: '/images/divinv.jpg',
+    github: 'https://github.com/',
+    demo: 'https://google.com/',
   },
 ];

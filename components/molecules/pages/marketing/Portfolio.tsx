@@ -5,29 +5,12 @@ import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 import { PortfolioItemConfig } from '@/types';
 import BlurredDecoration from '@/components/atoms/BlurredDecoration';
-
-const data: PortfolioItemConfig[] = [
-  {
-    title: 'Blessed',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    image: '/images/blessed.jpg',
-    github: 'https://github.com/',
-    demo: 'https://google.com/',
-  },
-  {
-    title: 'Demo2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    image: '/images/divinv.jpg',
-    github: 'https://github.com/',
-    demo: 'https://google.com/',
-  },
-];
+import { porfolioItemsConfig } from '@/config/marketing';
 
 const MotionImage = motion(Image);
 
 const Portfolio = () => {
+  const data = porfolioItemsConfig;
   const [active, setActive] = React.useState(0);
   const { github, demo, image, title, description } = data[
     active
